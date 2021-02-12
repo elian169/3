@@ -1,28 +1,18 @@
 ﻿using System;
 
-namespace num2
+class ejercicio
 {
-    class Program
+    static void Main()
     {
-        static void Main(string[] args)
-        {
-            int suma, resultado, numero;
-            suma = 0;
-            resultado = 0;
-            Console.WriteLine("escribe un numero");
-            numero = int.Parse(Console.ReadLine());
-            resultado = numero;
-            while (numero != 0)
-            {
-                Console.WriteLine("Digite otro número");
-                numero = int.Parse(Console.ReadLine());
-                suma++;
-                resultado +=numero;
-            }
-            Console.WriteLine("La cantidad de numeros digitados es: " + suma);
-            Console.WriteLine("La suma de todos los numeros es: " + resultado);
-            Console.ReadKey();
+        int i, impar = 0, par = 0;
+        for (i = 100; i < 120; i++)
+            if (i % 2 == 0)
+                Console.Write("{0}|", i);
 
-        }
+        Console.Write("\n\n");
+        
+
+        Console.Read();
+
     }
 }
